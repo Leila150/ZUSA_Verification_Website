@@ -27,6 +27,13 @@ body {
   text-align: center;
 }
 
+.verification-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .check-circle {
   width: 140px;
   height: 140px;
@@ -39,14 +46,13 @@ body {
 }
 
 .check-mark {
-  position: relative;
-  width: 68px;
-  height: 38px;
-  display: block;
-  border-left: 10px solid #ffffff;
-  border-bottom: 10px solid #ffffff;
-  transform: rotate(-45deg) translate(3px, -5px);
-  border-radius: 3px;
+  width: 78px;
+  height: 78px;
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .verification-message {
@@ -59,6 +65,17 @@ body {
   font-style: italic;
 }
 
+.rights {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #b8b8b8;
+  font-size: 13px;
+  font-style: italic;
+}
+
 @media (max-width: 480px) {
   .check-circle {
     width: 116px;
@@ -66,14 +83,18 @@ body {
   }
 
   .check-mark {
-    width: 56px;
-    height: 32px;
-    border-left-width: 8px;
-    border-bottom-width: 8px;
+    width: 64px;
+    height: 64px;
+    stroke-width: 7;
   }
 
   .verification-message {
     font-size: 16px;
     margin-top: 26px;
+  }
+
+  .rights {
+    bottom: 16px;
+    font-size: 12px;
   }
 }
