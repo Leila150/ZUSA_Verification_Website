@@ -74,7 +74,9 @@ body {
   text-align: center;
   color: #b8b8b8;
   font-size: 13px;
-  font-style: italic;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.2px;
 }
 
 @media (max-width: 480px) {
