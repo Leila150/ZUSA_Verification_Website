@@ -23,12 +23,6 @@ The website uses a clean, dark ZUSA-themed design shared across the main portal,
 
 The verification page intentionally remains a simple verification-success screen with the original ZUSA branding, success check mark, message, and footer.
 
-## Custom ZUSA Icon
-
-The main website uses `public/zusa-icon.png` as its icon.
-
-To change the icon, replace that file with the official ZUSA icon while keeping the filename `zusa-icon.png`.
-
 ## Structure
 
 ```text
