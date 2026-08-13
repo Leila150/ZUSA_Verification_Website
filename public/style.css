@@ -11,93 +11,98 @@ body {
 
 body {
   min-height: 100vh;
-  background: #2b2b2b;
+  background: #17191c;
   color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 .verification-page {
   min-height: 100vh;
   width: 100%;
+  position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 32px 20px;
+  padding: 32px 20px 72px;
   text-align: center;
 }
 
 .verification-content {
+  width: min(100%, 620px);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .check-circle {
-  width: 140px;
-  height: 140px;
+  width: 148px;
+  height: 148px;
   border-radius: 50%;
-  background: #16823a;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 42px rgba(22, 130, 58, 0.28);
+  display: grid;
+  place-items: center;
+  background: #116b36;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 14px 45px rgba(0, 0, 0, 0.32), 0 0 0 10px rgba(17, 107, 54, 0.07);
 }
 
 .check-mark {
-  width: 78px;
-  height: 78px;
+  width: 82px;
+  height: 82px;
   fill: none;
   stroke: #ffffff;
-  stroke-width: 7;
+  stroke-width: 6.5;
   stroke-linecap: round;
   stroke-linejoin: round;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.16));
 }
 
 .verification-message {
-  max-width: 560px;
+  max-width: 600px;
   margin: 30px 0 0;
-  color: #ffffff;
-  font-size: 18px;
-  line-height: 1.6;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 0.1px;
+  color: #f4f5f6;
+  font-size: clamp(17px, 2.2vw, 20px);
+  line-height: 1.55;
+  font-weight: 450;
+  letter-spacing: -0.01em;
 }
 
 .rights {
   position: absolute;
-  bottom: 20px;
   left: 0;
+  bottom: 22px;
   width: 100%;
+  padding: 0 20px;
   text-align: center;
-  color: #b8b8b8;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0.2px;
+  color: #858a90;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 @media (max-width: 480px) {
+  .verification-page {
+    padding: 24px 18px 68px;
+  }
+
   .check-circle {
-    width: 116px;
-    height: 116px;
+    width: 120px;
+    height: 120px;
   }
 
   .check-mark {
-    width: 64px;
-    height: 64px;
-    stroke-width: 7;
+    width: 68px;
+    height: 68px;
+    stroke-width: 6.5;
   }
 
   .verification-message {
+    margin-top: 25px;
     font-size: 16px;
-    margin-top: 26px;
   }
 
   .rights {
-    bottom: 16px;
-    font-size: 12px;
+    bottom: 17px;
+    font-size: 10px;
   }
 }
