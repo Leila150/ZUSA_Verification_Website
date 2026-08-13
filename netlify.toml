@@ -1,2 +1,15 @@
 [build]
   publish = "public"
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/oauth/start"
+  to = "/.netlify/functions/oauth-start"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/verification/"
+  to = "/.netlify/functions/oauth-callback"
+  status = 200
+  force = true
