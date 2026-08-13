@@ -62,7 +62,8 @@ body {
   font-size: 18px;
   line-height: 1.6;
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
+  letter-spacing: 0.1px;
 }
 
 .rights {
