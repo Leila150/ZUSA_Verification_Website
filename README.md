@@ -2,6 +2,14 @@
 
 The official ZUSA web portal and account verification website.
 
+## Authorized Use
+
+**This website and its verification system are for official ZUSA use only.**
+
+Do not copy, reproduce, modify, redistribute, deploy, or use this website or any part of its verification system unless authorized by the **owners of ZUSA**.
+
+Unauthorized use of the ZUSA branding, verification interface, website code, or related materials is not permitted.
+
 ## Routes
 
 - `/` — ZUSA main website
@@ -19,7 +27,7 @@ The verification page intentionally remains a simple verification-success screen
 
 The main website uses `public/zusa-icon.png` as its icon.
 
-To change the icon, replace that file with your own ZUSA icon while keeping the filename `zusa-icon.png`.
+To change the icon, replace that file with the official ZUSA icon while keeping the filename `zusa-icon.png`.
 
 ## Structure
 
