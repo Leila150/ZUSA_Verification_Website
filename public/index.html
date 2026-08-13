@@ -10,12 +10,19 @@
 </head>
 <body>
   <main class="verification-page" aria-labelledby="verification-message">
-    <div class="check-circle" aria-label="Verification successful" role="img">
-      <span class="check-mark" aria-hidden="true">✓</span>
+    <div class="verification-content">
+      <div class="check-circle" aria-label="Verification successful" role="img">
+        <svg class="check-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M14 33.5 L27 46.5 L50 18.5" />
+        </svg>
+      </div>
+
+      <p id="verification-message" class="verification-message">
+        Successfully verified your account, you can go back to Discord.
+      </p>
     </div>
-    <p id="verification-message" class="verification-message">
-      Successfully verified your account, you can go back to Discord.
-    </p>
+
+    <footer class="rights">All Rights Reserved</footer>
   </main>
 </body>
 </html>
